@@ -1,0 +1,31 @@
+{
+    "encoder": {
+        "hidden_size": 512,
+        "n_layers": 2,
+        "emb_size": 50,
+        "bidirectional": true,
+        "weight_drop": 0,
+        "type": "LSTM"
+    },
+    "decoder": {
+        "hidden_size": 512,
+        "n_layers": 1,
+        "type": "LSTM"
+    },
+    "dnn_size": 512,
+    "cnn_size": 768,
+    "teacher_forcing": 0.2,
+    "seed": 0,
+    "training_pct": 80,
+    "dev_pct": 10,
+    "test_pct": 10,
+    "dataset_file": "tweets.csv",
+    "batch_size": 64,
+    "lr": 0.001,
+    "clip_grad_norm": 20,
+    "epochs": 16,
+    "resume": "twitter.pt",
+    "test": false,
+    "output_file": "twitter.pt",
+    "weight_decay": 1E-6
+}

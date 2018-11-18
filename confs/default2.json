@@ -1,0 +1,28 @@
+
+{
+    "encoder": {
+        "hidden_size": 512,
+        "n_layers": 2,
+        "emb_size": 100,
+        "type": "LSTM"
+    },
+    "decoder": {
+        "hidden_size": 512,
+        "n_layers": 1,
+        "type": "LSTM"
+    },
+    "dnn_size": 384,
+    "teacher_forcing": 0.2,
+    "seed": 0,
+    "training_pct": 80,
+    "dev_pct": 10,
+    "test_pct": 10,
+    "dataset_file": "opendn.csv",
+    "batch_size": 64,
+    "lr": 0.0001,
+    "clip_grad_norm": 10,
+    "epochs": 16,
+    "resume": "state.pt",
+    "output_file": "state.pt",
+    "weight_decay": 5E-4
+}
